@@ -24,6 +24,8 @@ Set-Alias vi nvim
 Set-Alias ll ls
 Set-Alias cl clear
 Set-Alias g git
+Set-Alias jc javac
+Set-Alias j java
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 
