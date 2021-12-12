@@ -12,10 +12,10 @@ Contains my neovim configuration, my powershell configuration for windows.
 
 **For Unix and Mac Users the nvim directory will be under the .config directory itself**
 
-$home/
-  .config/
-    powershell/
-      user_profile.ps1
+$home/ 
+  .config/ 
+      powershell/ 
+      user_profile.ps1 | 
       sgzoid.omp.json
 
 *Neovim*
@@ -24,8 +24,8 @@ $home/
   .AppData/
     Local/
       nvim/
-      init.vim
-      maps.vim
+      init.vim | 
+      maps.vim | 
       colors/
         NeoSolarized.vim
       plugged/
