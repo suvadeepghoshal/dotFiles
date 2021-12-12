@@ -58,7 +58,7 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'prettier/vim-prettier'
-Plug 'https://github.com/jiangmiao/auto-pairs' "auto pairs of brakcets
+Plug 'https://github.com/jiangmiao/auto-pairs' "auto pair of brackets
 
 set encoding=UTF-8
 
@@ -84,6 +84,9 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+"For prettier
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 " airline symbols
 let g:airline_left_sep = ''
