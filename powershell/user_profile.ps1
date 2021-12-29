@@ -1,3 +1,6 @@
+# set PowerShell to UTF-8
+[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
 Import-Module posh-git
 Import-Module oh-my-posh
 $omp_config = Join-Path $PSScriptRoot ".\sgzoid.omp.json"
@@ -23,9 +26,11 @@ $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 Set-Alias vi nvim
 Set-Alias ll ls
 Set-Alias cl clear
-Set-Alias g git
 Set-Alias jc javac
 Set-Alias j java
+Set-Alias m mvn
+Set-Alias g git
+Set-Alias co code
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 
