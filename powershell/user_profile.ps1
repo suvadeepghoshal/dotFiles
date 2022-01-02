@@ -34,6 +34,9 @@ Set-Alias co code
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 
+# To clear off initial gibrish from the terminal
+Clear-Host
+
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
