@@ -59,6 +59,7 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'prettier/vim-prettier'
 Plug 'https://github.com/jiangmiao/auto-pairs' "auto pair of brackets
+Plug 'nvim-lua/completion-nvim'
 
 set encoding=UTF-8
 
@@ -108,8 +109,8 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
   " Use NeoSolarized
   let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  runtime ./colors/gruvbox.vim
+  colorscheme gruvbox
 endif
 
 runtime ./maps.vim
