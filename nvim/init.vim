@@ -60,6 +60,7 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'prettier/vim-prettier'
 Plug 'https://github.com/jiangmiao/auto-pairs' "auto pair of brackets
 Plug 'nvim-lua/completion-nvim'
+Plug 'iamcco/coc-tailwindcss'
 
 set encoding=UTF-8
 
@@ -107,10 +108,9 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/gruvbox.vim
-  colorscheme gruvbox
+  " Use NeoSolarized  let g:neosolarized_termtrans=1
+  runtime ./colors/NeoSolarized.vim
+  colorscheme NeoSolarized
 endif
 
 runtime ./maps.vim
