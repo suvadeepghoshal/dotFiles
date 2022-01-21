@@ -13,7 +13,7 @@ set encoding=utf-8
 set title
 set mouse=a
 set autoindent
-set tabstop
+set tabstop=2
 set background=dark
 set nobackup
 set hlsearch
@@ -97,6 +97,9 @@ set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+
+"For prettier
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 runtime ./plug.vim
 runtime ./maps.vim
