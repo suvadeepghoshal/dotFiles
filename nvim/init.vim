@@ -25,6 +25,7 @@ set expandtab
 let loaded_matchparen = 1
 set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
+set clipboard=unnamedplus
 
 " incremental substitution (neovim)
 if has('nvim')
