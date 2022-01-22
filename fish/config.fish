@@ -1,6 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
 set fish_greeting ""
 set -gx TERM xterm-256color
 
@@ -17,6 +14,15 @@ set -gx PATH ~/.local/bin $PATH
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
+
+#NVM
+function __check_rvm --on-variable PWD --description 'Do nvm stuff'
+  status --is-command-substitution; and return
+  if test -f .nvmrc; and test -r .nvmrc;
+    nvm use
+  else
+  end
+end
 
 # alias (which are not present in fish functions)
 alias ls "exa --long --header --icons"
