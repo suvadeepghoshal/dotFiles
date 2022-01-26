@@ -63,8 +63,8 @@ autocmd InsertLeave * set nopaste
 
 " Add asterisks in block comments
 set formatoptions+=r
+
 set cursorline
-"set cursorcolumn
 
 " Set cursor line color on visual mode
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
@@ -113,10 +113,10 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  " Use Noir color scheme
+ let g:neosolarized_termtrans=1
+runtime ./colors/256_noir.vim
+colorscheme 256_noir
 endif
 
 
