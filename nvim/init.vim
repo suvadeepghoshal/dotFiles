@@ -113,10 +113,13 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use Noir color scheme
+  " Use afterglow color scheme
  let g:neosolarized_termtrans=1
-runtime ./colors/256_noir.vim
-colorscheme 256_noir
+ let g:airline_theme='afterglow'
+ let g:afterglow_italic_comments=1
+ let g:afterglow_inherit_background=1
+runtime ./colors/afterglow.vim
+colorscheme afterglow
 endif
 
 
