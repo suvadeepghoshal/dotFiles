@@ -118,8 +118,8 @@ if exists("&termguicolors") && exists("&winblend")
  let g:airline_theme='afterglow'
  let g:afterglow_italic_comments=1
  let g:afterglow_inherit_background=1
-runtime ./colors/afterglow.vim
-colorscheme afterglow
+runtime ./colors/monokai.vim
+colorscheme monokai
 endif
 
 
